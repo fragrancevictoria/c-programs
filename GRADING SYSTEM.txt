@@ -1,0 +1,19 @@
+//Grading system
+#include<stdio.h>
+int main(){
+    int math,english,kiswahili,avg;
+    printf("Enter marks for math,english,kiswahili:");
+    scanf("%d%d%d",&math,&english,&kiswahili);
+    avg=(math+english+kiswahili)/3;
+    if(avg>=70&&avg<=100){
+        printf("grade A");}
+        else if(avg>=60&&avg<=69){
+            printf("grade B");}
+            else if(avg>=50&&avg<=59){
+                printf("grade C");}
+                else if(avg>=40&&avg<=49){
+                    printf("grade D");}
+                    else if(avg>=0&&avg<=39){
+                        printf("fail");}
+                        return 0;
+}
